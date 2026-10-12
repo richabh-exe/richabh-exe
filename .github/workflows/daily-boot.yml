@@ -1,10 +1,11 @@
 name: daily-boot
 
-# Re-renders the terminal (live uptime + repo count), the typing line and
-# today's fortune, then commits only if something actually changed.
+# Re-renders the terminal (live uptime + repo count), the streak card, the
+# typing line and today's fortune, then commits only if something changed.
+# Runs every 3 hours so the streak card stays current through the day.
 on:
   schedule:
-    - cron: "5 0 * * *" # 00:05 UTC daily
+    - cron: "5 */3 * * *" # every 3h, first run 00:05 UTC
   workflow_dispatch:
   push:
     branches: [main]
@@ -34,11 +35,12 @@ jobs:
 
       - name: Commit changes
         run: |
-          if git diff --quiet; then
+          git add -A assets README.md
+          if git diff --cached --quiet; then
             echo "Nothing changed. Going back to sleep."
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -am "chore(boot): daily reboot $(date -u +%F)"
+          git commit -m "chore(boot): refresh profile $(date -u +'%F %H:%M')"
           git push

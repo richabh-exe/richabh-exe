@@ -3,16 +3,18 @@
 //   assets/terminal.svg  ← live data from the GitHub API (uptime, repos, location)
 //   assets/typing.svg    ← rotating taglines
 //   assets/footer.svg    ← the closing `exit`
+//   assets/streak.svg    ← streak stats from the contribution calendar (GraphQL)
 //   README.md            ← today's `fortune | cowsay` between the FORTUNE markers
 //
 // Runs daily in .github/workflows/daily-boot.yml; run locally with `npm run build`.
 
-import { readFile, writeFile } from 'node:fs/promises';
+import { access, readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { renderTerminal } from './lib/terminal.mjs';
 import { renderTyping } from './lib/typing.mjs';
 import { fortune } from './lib/fortune.mjs';
 import { renderFooter } from './lib/footer.mjs';
+import { fetchCalendar, computeStreak, renderStreak, renderStreakPending } from './lib/streak.mjs';
 
 const USER = process.env.GH_USER ?? 'richabh-exe';
 const root = (p) => fileURLToPath(new URL(`../${p}`, import.meta.url));
@@ -87,5 +89,17 @@ await replaceBlock(
   'FORTUNE',
   ['```text', fortune(now), '```', `<sub>rotates daily · last run ${now.toISOString().slice(0, 10)}</sub>`].join('\n'),
 );
+
+// Streak: on API failure keep the last good card rather than publishing zeros.
+try {
+  const calendar = await fetchCalendar({ login: USER, since: profile.created_at, token: process.env.GITHUB_TOKEN });
+  const streak = computeStreak(calendar);
+  await writeFile(root('assets/streak.svg'), renderStreak(streak));
+  console.log('✓ streak', { total: streak.total, current: streak.current, longest: streak.longest });
+} catch (err) {
+  console.warn(`! streak not refreshed (${err.message}); keeping the previous card`);
+  const exists = await access(root('assets/streak.svg')).then(() => true, () => false);
+  if (!exists) await writeFile(root('assets/streak.svg'), renderStreakPending());
+}
 
 console.log('✓ built', data);
