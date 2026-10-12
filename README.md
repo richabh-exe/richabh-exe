@@ -80,7 +80,7 @@ export default richabh; // 🚀
 <img height="170" src="https://github-readme-stats.vercel.app/api?username=richabh-exe&show_icons=true&include_all_commits=true&count_private=true&rank_icon=github&hide_border=true&bg_color=0d1117&title_color=4dff9a&icon_color=ffb547&text_color=c9d1d9&ring_color=4dff9a&custom_title=%24%20git%20log%20--stat" alt="GitHub stats" />
 <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=richabh-exe&layout=compact&langs_count=6&hide_border=true&bg_color=0d1117&title_color=4dff9a&text_color=c9d1d9&custom_title=%24%20cloc%20.%20--by-lang" alt="Top languages" />
 
-<img width="100%" src="https://streak-stats.demolab.com?user=richabh-exe&hide_border=true&background=0D1117&ring=4DFF9A&fire=FFB547&currStreakNum=4DFF9A&currStreakLabel=4DFF9A&sideNums=C9D1D9&sideLabels=8B949E&dates=6B8F7A&stroke=1F2A24" alt="Contribution streak" />
+<img width="100%" src="assets/streak.svg" alt="Contribution streak: total contributions, current streak and longest streak" />
 
 <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=richabh-exe&bg_color=0d1117&color=c9d1d9&line=4dff9a&point=ffb547&area=true&area_color=4dff9a&hide_border=true&custom_title=%24%20watch%20-n%2086400%20git%20commit" alt="Contribution activity graph" />
 
