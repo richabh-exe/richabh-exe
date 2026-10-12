@@ -171,12 +171,3 @@ export function renderStreak(s, scope = 'public only') {
 </svg>
 `;
 }
-
-/** Shown only before the first successful sync, so no fake numbers ever ship. */
-export const renderStreakPending = () => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} 84" width="${W}" height="84" role="img" aria-label="Streak card syncing">
-  <style>text { font-family: ${font}; font-size: 13px; white-space: pre; }</style>
-  <rect x="1" y="1" width="${W - 2}" height="82" rx="12" fill="#0d1117" stroke="#1f2a24"/>
-  <text x="24" y="34"><tspan fill="${c.green}">richabh@github</tspan><tspan fill="${c.ink}">:~$ streak --stats</tspan></text>
-  <text x="24" y="58" fill="${c.muted}">syncing with the GitHub contribution calendar…</text>
-</svg>
-`;

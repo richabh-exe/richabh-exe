@@ -77,14 +77,15 @@ export default richabh; // 🚀
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=richabh-exe&show_icons=true&include_all_commits=true&count_private=true&rank_icon=github&hide_border=true&bg_color=0d1117&title_color=4dff9a&icon_color=ffb547&text_color=c9d1d9&ring_color=4dff9a&custom_title=%24%20git%20log%20--stat" alt="GitHub stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=richabh-exe&layout=compact&langs_count=6&hide_border=true&bg_color=0d1117&title_color=4dff9a&text_color=c9d1d9&custom_title=%24%20cloc%20.%20--by-lang" alt="Top languages" />
+<img width="100%" src="assets/stats.svg" alt="Last-year contribution totals and languages by bytes" />
 
 <img width="100%" src="assets/streak.svg" alt="Contribution streak: total contributions, current streak and longest streak" />
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=richabh-exe&bg_color=0d1117&color=c9d1d9&line=4dff9a&point=ffb547&area=true&area_color=4dff9a&hide_border=true&custom_title=%24%20watch%20-n%2086400%20git%20commit" alt="Contribution activity graph" />
+<img width="100%" src="assets/activity.svg" alt="Daily contributions over the last 90 days" />
 
-<img width="100%" src="https://github-profile-trophy.vercel.app/?username=richabh-exe&theme=matrix&no-frame=true&no-bg=true&margin-w=8&column=-1" alt="GitHub trophies" />
+<img width="100%" src="assets/achievements.svg" alt="Achievements unlocked from real GitHub activity" />
+
+<sub>Every card above is rendered in this repo from the GitHub API by <code>scripts/build.mjs</code>, refreshed every 3 hours.</sub>
 
 </div>
 

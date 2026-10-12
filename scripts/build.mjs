@@ -4,6 +4,9 @@
 //   assets/typing.svg    ← rotating taglines
 //   assets/footer.svg    ← the closing `exit`
 //   assets/streak.svg    ← streak stats from the contribution calendar (GraphQL)
+//   assets/stats.svg     ← last-year totals + languages by bytes (GraphQL)
+//   assets/activity.svg  ← daily contributions, last 90 days
+//   assets/achievements.svg ← tiered badges computed from the above
 //   README.md            ← today's `fortune | cowsay` between the FORTUNE markers
 //
 // Runs daily in .github/workflows/daily-boot.yml; run locally with `npm run build`.
@@ -14,7 +17,11 @@ import { renderTerminal } from './lib/terminal.mjs';
 import { renderTyping } from './lib/typing.mjs';
 import { fortune } from './lib/fortune.mjs';
 import { renderFooter } from './lib/footer.mjs';
-import { fetchCalendar, computeStreak, renderStreak, renderStreakPending } from './lib/streak.mjs';
+import { fetchCalendar, computeStreak, renderStreak } from './lib/streak.mjs';
+import { fetchStats, renderStats } from './lib/stats.mjs';
+import { renderActivity } from './lib/activity.mjs';
+import { computeAchievements, renderAchievements } from './lib/achievements.mjs';
+import { pending } from './lib/panel.mjs';
 
 const USER = process.env.GH_USER ?? 'richabh-exe';
 const root = (p) => fileURLToPath(new URL(`../${p}`, import.meta.url));
@@ -90,23 +97,52 @@ await replaceBlock(
   ['```text', fortune(now), '```', `<sub>rotates daily · last run ${now.toISOString().slice(0, 10)}</sub>`].join('\n'),
 );
 
-// Streak: on API failure keep the last good card rather than publishing zeros.
-// STREAK_TOKEN (the owner's PAT) lets the calendar include private contributions.
-try {
-  const ownerToken = process.env.STREAK_TOKEN;
-  const { days, restricted } = await fetchCalendar({
-    login: USER,
-    since: profile.created_at,
-    token: ownerToken || process.env.GITHUB_TOKEN,
-  });
-  const scope = ownerToken || restricted > 0 ? 'public + private' : 'public only';
-  const streak = computeStreak(days);
-  await writeFile(root('assets/streak.svg'), renderStreak(streak, scope));
-  console.log('✓ streak', { scope, total: streak.total, current: streak.current, longest: streak.longest });
-} catch (err) {
-  console.warn(`! streak not refreshed (${err.message}); keeping the previous card`);
-  const exists = await access(root('assets/streak.svg')).then(() => true, () => false);
-  if (!exists) await writeFile(root('assets/streak.svg'), renderStreakPending());
+// Dashboard cards. On API failure keep the last good card rather than publishing
+// zeros; a card that has never synced shows a "syncing" placeholder instead.
+// STREAK_TOKEN (the owner's PAT) lets GitHub include private contributions.
+const ownerToken = process.env.STREAK_TOKEN;
+const token = ownerToken || process.env.GITHUB_TOKEN;
+
+async function card(file, command, build) {
+  try {
+    await writeFile(root(`assets/${file}`), await build());
+  } catch (err) {
+    console.warn(`! ${file} not refreshed (${err.message}); keeping the previous card`);
+    const exists = await access(root(`assets/${file}`)).then(() => true, () => false);
+    if (!exists) await writeFile(root(`assets/${file}`), pending(command));
+  }
 }
+
+const calendarP = fetchCalendar({ login: USER, since: profile.created_at, token });
+const statsP = token ? fetchStats({ login: USER, token }) : Promise.reject(new Error('no token'));
+calendarP.catch(() => {});
+statsP.catch(() => {});
+
+const scopeOf = (restricted) => (ownerToken || restricted > 0 ? 'public + private' : 'public only');
+
+await card('streak.svg', 'streak --stats', async () => {
+  const { days, restricted } = await calendarP;
+  const streak = computeStreak(days);
+  console.log('✓ streak', { scope: scopeOf(restricted), total: streak.total, current: streak.current, longest: streak.longest });
+  return renderStreak(streak, scopeOf(restricted));
+});
+
+await card('stats.svg', 'git log --stat', async () => {
+  const stats = await statsP;
+  console.log('✓ stats', { ...stats, languages: stats.languages.map((l) => l.name) });
+  return renderStats(stats, scopeOf(stats.restricted));
+});
+
+await card('activity.svg', 'watch -n 86400 git commit', async () => {
+  const { days, restricted } = await calendarP;
+  return renderActivity(days, computeStreak(days).today, scopeOf(restricted));
+});
+
+await card('achievements.svg', 'ls ~/achievements', async () => {
+  const [{ days }, stats] = await Promise.all([calendarP, statsP]);
+  const list = computeAchievements({ streak: computeStreak(days), stats, calendar: days });
+  console.log('✓ achievements', list.map((a) => `${a.name}:${a.level}`).join(' '));
+  return renderAchievements(list);
+});
 
 console.log('✓ built', data);
