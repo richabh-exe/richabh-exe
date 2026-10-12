@@ -1,11 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 84" width="860" height="84" role="img" aria-label="git log --stat: syncing">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 240" width="860" height="240" role="img" aria-label="commits: 3, pull requests: 0, issues: 0, code reviews: 0, repos contributed to: 2, stars earned: 0, private contributions: 276. Languages: JavaScript 80.7%, CSS 10.6%, HTML 8.7%">
   <style>
     text { font-family: 'JetBrains Mono','Fira Code','SFMono-Regular',Menlo,Consolas,'DejaVu Sans Mono',monospace; white-space: pre; }
-    
+    .row { opacity: 0; animation: in .4s ease-out forwards; }
+    @keyframes in { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { .row { animation: none; opacity: 1; } }
   </style>
-  <rect x="1" y="1" width="858" height="82" rx="12" fill="#0d1117" stroke="#1f2a24"/>
-  <text x="24" y="32" font-size="13"><tspan fill="#4dff9a">richabh@github</tspan><tspan fill="#d4ffe6">:</tspan><tspan fill="#5ee7ff">~</tspan><tspan fill="#d4ffe6">$ git log --stat</tspan></text>
-  <text x="836" y="32" font-size="11" text-anchor="end" fill="#6b8f7a"></text>
+  <rect x="1" y="1" width="858" height="238" rx="12" fill="#0d1117" stroke="#1f2a24"/>
+  <text x="24" y="32" font-size="13"><tspan fill="#4dff9a">richabh@github</tspan><tspan fill="#d4ffe6">:</tspan><tspan fill="#5ee7ff">~</tspan><tspan fill="#d4ffe6">$ git log --stat --since=&quot;1 year ago&quot;</tspan></text>
+  <text x="836" y="32" font-size="11" text-anchor="end" fill="#6b8f7a">public + private</text>
   <line x1="24" y1="46" x2="836" y2="46" stroke="#1f2a24"/>
-  <text x="24" y="66" font-size="13" fill="#6b8f7a">syncing with the GitHub API…</text>
+  
+    <g class="row" style="animation-delay:0.00s">
+      <text x="24" y="82" font-size="13" fill="#6b8f7a">commits</text>
+      <line x1="210" y1="78" x2="356" y2="78" stroke="#1f2a24" stroke-dasharray="2 4"/>
+      <text x="400" y="82" font-size="14" font-weight="700" text-anchor="end" fill="#d4ffe6">3</text>
+    </g>
+    <g class="row" style="animation-delay:0.05s">
+      <text x="24" y="104" font-size="13" fill="#6b8f7a">pull requests</text>
+      <line x1="210" y1="100" x2="356" y2="100" stroke="#1f2a24" stroke-dasharray="2 4"/>
+      <text x="400" y="104" font-size="14" font-weight="700" text-anchor="end" fill="#d4ffe6">0</text>
+    </g>
+    <g class="row" style="animation-delay:0.10s">
+      <text x="24" y="126" font-size="13" fill="#6b8f7a">issues</text>
+      <line x1="210" y1="122" x2="356" y2="122" stroke="#1f2a24" stroke-dasharray="2 4"/>
+      <text x="400" y="126" font-size="14" font-weight="700" text-anchor="end" fill="#d4ffe6">0</text>
+    </g>
+    <g class="row" style="animation-delay:0.15s">
+      <text x="24" y="148" font-size="13" fill="#6b8f7a">code reviews</text>
+      <line x1="210" y1="144" x2="356" y2="144" stroke="#1f2a24" stroke-dasharray="2 4"/>
+      <text x="400" y="148" font-size="14" font-weight="700" text-anchor="end" fill="#d4ffe6">0</text>
+    </g>
+    <g class="row" style="animation-delay:0.20s">
+      <text x="24" y="170" font-size="13" fill="#6b8f7a">repos contributed to</text>
+      <line x1="210" y1="166" x2="356" y2="166" stroke="#1f2a24" stroke-dasharray="2 4"/>
+      <text x="400" y="170" font-size="14" font-weight="700" text-anchor="end" fill="#d4ffe6">2</text>
+    </g>
+    <g class="row" style="animation-delay:0.25s">
+      <text x="24" y="192" font-size="13" fill="#6b8f7a">stars earned</text>
+      <line x1="210" y1="188" x2="356" y2="188" stroke="#1f2a24" stroke-dasharray="2 4"/>
+      <text x="400" y="192" font-size="14" font-weight="700" text-anchor="end" fill="#d4ffe6">0</text>
+    </g>
+    <g class="row" style="animation-delay:0.30s">
+      <text x="24" y="214" font-size="13" fill="#6b8f7a">private contributions</text>
+      <line x1="210" y1="210" x2="356" y2="210" stroke="#1f2a24" stroke-dasharray="2 4"/>
+      <text x="400" y="214" font-size="14" font-weight="700" text-anchor="end" fill="#d4ffe6">276</text>
+    </g>
+  <line x1="430" y1="62" x2="430" y2="218" stroke="#1f2a24"/>
+  <text x="456" y="72" font-size="11" letter-spacing="2" fill="#ffb547">LANGUAGES · BY BYTES</text><rect x="456.0" y="88" width="303.6" height="10" rx="2" fill="#f1e05a"/><rect x="761.6" y="88" width="39.7" height="10" rx="2" fill="#663399"/><rect x="803.3" y="88" width="32.7" height="10" rx="2" fill="#e34c26"/>
+    <rect x="456" y="121" width="10" height="10" rx="2" fill="#f1e05a"/>
+    <text x="474" y="130" font-size="12" fill="#d4ffe6">JavaScript</text>
+    <text x="630" y="130" font-size="12" text-anchor="end" fill="#6b8f7a">80.7%</text>
+    <rect x="646" y="121" width="10" height="10" rx="2" fill="#663399"/>
+    <text x="664" y="130" font-size="12" fill="#d4ffe6">CSS</text>
+    <text x="820" y="130" font-size="12" text-anchor="end" fill="#6b8f7a">10.6%</text>
+    <rect x="456" y="145" width="10" height="10" rx="2" fill="#e34c26"/>
+    <text x="474" y="154" font-size="12" fill="#d4ffe6">HTML</text>
+    <text x="630" y="154" font-size="12" text-anchor="end" fill="#6b8f7a">8.7%</text>
 </svg>
