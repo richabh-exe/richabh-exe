@@ -18,8 +18,13 @@
 
 <br/>
 
-<a href="https://richabh.com/links"><img src="https://img.shields.io/badge/%24%20open-richabh.com%2Flinks-4dff9a?style=for-the-badge&labelColor=0d1117" alt="Portfolio: richabh.com/links" /></a>
-<a href="mailto:rishabh.shukla@pm.me"><img src="https://img.shields.io/badge/%24%20mail-rishabh.shukla%40pm.me-ffb547?style=for-the-badge&labelColor=0d1117&logo=protonmail&logoColor=ffb547" alt="Email Rishabh" /></a>
+<!-- HERO_LINKS:START -->
+<a href="https://www.richabh.com/"><img src="assets/links/portfolio.svg" height="34" alt="portfolio: richabh.com" /></a>
+<a href="https://www.richabh.com/contact"><img src="assets/links/project.svg" height="34" alt="start-a-project: /contact" /></a>
+<a href="mailto:work@richabh.com"><img src="assets/links/email.svg" height="34" alt="mail: work@richabh.com" /></a>
+<a href="https://www.linkedin.com/in/richabh-exe"><img src="assets/links/linkedin.svg" height="34" alt="linkedin: richabh-exe" /></a>
+<!-- HERO_LINKS:END -->
+
 <img src="https://komarev.com/ghpvc/?username=richabh-exe&label=%24%20wc%20-l%20visitors&color=4dff9a&style=for-the-badge&labelColor=0d1117" alt="Profile views" />
 
 </div>
@@ -35,6 +40,7 @@ interface Human extends Developer, Tinkerer {}
 const richabh = {
   handle:     "richabh-exe",
   based:      "Lucknow, IN  (UTC+05:30)",
+  title:      "Creative developer & designer",
   role:       ["Builder", "AI Tinkerer", "Pixel Pusher"],
   building:   "interfaces that feel fast, and agents that do the boring parts",
   learning:   ["TypeScript (the strict kind)", "Node + Express", "React + Next.js"],
@@ -129,10 +135,25 @@ export default richabh; // 🚀
 ```bash
 #!/usr/bin/env bash
 # Pick a channel. All of them route to a human (mostly).
-open  "https://richabh.com/links"      # portfolio, socials, everything
-mail  "rishabh.shukla@pm.me"           # encrypted, like my sleep schedule
-gh    issue create --repo richabh-exe/richabh-exe   # say hi, or report a bug in me
+open "https://www.richabh.com/contact"   # start a project
+mail "work@richabh.com"                  # replies faster than my CI
+gh   issue create --repo richabh-exe/richabh-exe   # say hi, or report a bug in me
 ```
+
+<div align="center">
+
+<!-- LINKS:START -->
+<a href="https://www.richabh.com/"><img src="assets/links/portfolio.svg" height="34" alt="portfolio: richabh.com" /></a>
+<a href="https://www.richabh.com/contact"><img src="assets/links/project.svg" height="34" alt="start-a-project: /contact" /></a>
+<a href="mailto:work@richabh.com"><img src="assets/links/email.svg" height="34" alt="mail: work@richabh.com" /></a>
+<a href="https://www.linkedin.com/in/richabh-exe"><img src="assets/links/linkedin.svg" height="34" alt="linkedin: richabh-exe" /></a>
+<a href="https://x.com/_richabh"><img src="assets/links/x.svg" height="34" alt="x: @_richabh" /></a>
+<a href="https://peerlist.io/richabh"><img src="assets/links/peerlist.svg" height="34" alt="peerlist: richabh" /></a>
+<a href="https://medium.com/@richabh"><img src="assets/links/medium.svg" height="34" alt="medium: @richabh" /></a>
+<a href="https://leetcode.com/u/richabh"><img src="assets/links/leetcode.svg" height="34" alt="leetcode: richabh" /></a>
+<!-- LINKS:END -->
+
+</div>
 
 <details>
 <summary><code>$ sudo rm -rf / --no-preserve-root</code></summary>
