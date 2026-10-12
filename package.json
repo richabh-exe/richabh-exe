@@ -1,0 +1,10 @@
+{
+  "name": "richabh-exe",
+  "private": true,
+  "description": "Generator for the richabh-exe GitHub profile: CRT terminal, typing headline and daily fortune.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  }
+}
