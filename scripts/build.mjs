@@ -91,11 +91,18 @@ await replaceBlock(
 );
 
 // Streak: on API failure keep the last good card rather than publishing zeros.
+// STREAK_TOKEN (the owner's PAT) lets the calendar include private contributions.
 try {
-  const calendar = await fetchCalendar({ login: USER, since: profile.created_at, token: process.env.GITHUB_TOKEN });
-  const streak = computeStreak(calendar);
-  await writeFile(root('assets/streak.svg'), renderStreak(streak));
-  console.log('✓ streak', { total: streak.total, current: streak.current, longest: streak.longest });
+  const ownerToken = process.env.STREAK_TOKEN;
+  const { days, restricted } = await fetchCalendar({
+    login: USER,
+    since: profile.created_at,
+    token: ownerToken || process.env.GITHUB_TOKEN,
+  });
+  const scope = ownerToken || restricted > 0 ? 'public + private' : 'public only';
+  const streak = computeStreak(days);
+  await writeFile(root('assets/streak.svg'), renderStreak(streak, scope));
+  console.log('✓ streak', { scope, total: streak.total, current: streak.current, longest: streak.longest });
 } catch (err) {
   console.warn(`! streak not refreshed (${err.message}); keeping the previous card`);
   const exists = await access(root('assets/streak.svg')).then(() => true, () => false);

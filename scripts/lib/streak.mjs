@@ -1,6 +1,10 @@
 // Self-hosted streak card. Numbers come straight from the GitHub contribution
-// calendar (the same data as the green squares on the profile), so they always
-// match what visitors see, unlike the cached public streak services.
+// calendar, the same data as the green squares on the profile.
+//
+// Private contributions: GitHub only reveals them to the calendar query when
+//   a) the token belongs to the profile owner (STREAK_TOKEN secret), or
+//   b) the owner turned on "Private contributions" in Contribution settings.
+// The card says which of the two views it is showing.
 
 import { color as c, font, esc } from './theme.mjs';
 
@@ -13,20 +17,24 @@ const H = 258;
 const QUERY = `query($login: String!, $from: DateTime!, $to: DateTime!) {
   user(login: $login) {
     contributionsCollection(from: $from, to: $to) {
+      restrictedContributionsCount
       contributionCalendar { weeks { contributionDays { date contributionCount } } }
     }
   }
 }`;
 
 /**
- * Fetches every calendar day since the account was created. GitHub caps each
- * contributionsCollection window at one year, so long histories are paged.
+ * Fetches every calendar day since the account was created (and at least the
+ * last year, so the total covers everything the profile graph shows). GitHub
+ * caps each contributionsCollection window at one year, so it pages.
+ * `restricted` counts private contributions shared anonymously by the owner.
  */
 export async function fetchCalendar({ login, since, token }) {
-  if (!token) throw new Error('GITHUB_TOKEN is required for the GraphQL API');
+  if (!token) throw new Error('a token (STREAK_TOKEN or GITHUB_TOKEN) is required for the GraphQL API');
   const days = new Map();
-  let from = new Date(since);
+  let restricted = 0;
   const now = new Date();
+  let from = new Date(Math.min(new Date(since).getTime(), now.getTime() - 365 * 86_400_000));
   while (from < now) {
     const to = new Date(Math.min(now.getTime(), from.getTime() + 365 * 86_400_000));
     const res = await fetch('https://api.github.com/graphql', {
@@ -37,11 +45,16 @@ export async function fetchCalendar({ login, since, token }) {
     });
     const json = await res.json();
     if (!res.ok || json.errors) throw new Error(json.errors?.[0]?.message ?? `HTTP ${res.status}`);
-    for (const week of json.data.user.contributionsCollection.contributionCalendar.weeks)
+    const collection = json.data.user.contributionsCollection;
+    restricted += collection.restrictedContributionsCount;
+    for (const week of collection.contributionCalendar.weeks)
       for (const d of week.contributionDays) days.set(d.date, d.contributionCount);
     from = to;
   }
-  return [...days].map(([date, count]) => ({ date, count })).sort((a, b) => a.date.localeCompare(b.date));
+  return {
+    days: [...days].map(([date, count]) => ({ date, count })).sort((a, b) => a.date.localeCompare(b.date)),
+    restricted,
+  };
 }
 
 /** YYYY-MM-DD for "today" in the profile owner's timezone. */
@@ -72,7 +85,8 @@ export function computeStreak(calendar, today = todayIn(TZ)) {
     current = { length: current.length + 1, start: tail[i].date, end: current.end ?? tail[i].date };
   }
 
-  return { total, current, longest, first: days[0]?.date, recent: days.slice(-30), today };
+  const first = days.find((d) => d.count > 0)?.date ?? days[0]?.date;
+  return { total, current, longest, first, recent: days.slice(-30), today };
 }
 
 /* ---------- render ---------- */
@@ -101,7 +115,7 @@ const stat = (x, value, label, sub, tone) => `
     <text x="${x}" y="182" text-anchor="middle" font-size="11" letter-spacing="2" fill="${c.amber}">${esc(label)}</text>
     <text x="${x}" y="200" text-anchor="middle" font-size="12" fill="${c.muted}">${esc(sub)}</text>`;
 
-export function renderStreak(s) {
+export function renderStreak(s, scope = 'public only') {
   const R = 46;
   const C = 2 * Math.PI * R;
   const max = Math.max(1, ...s.recent.map((d) => d.count));
@@ -132,7 +146,7 @@ export function renderStreak(s) {
 
   <rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="12" fill="#0d1117" stroke="#1f2a24"/>
   <text x="24" y="32" font-size="13"><tspan fill="${c.green}">richabh@github</tspan><tspan fill="${c.ink}">:</tspan><tspan fill="${c.cyan}">~</tspan><tspan fill="${c.ink}">$ streak --stats --tz ${TZ}</tspan></text>
-  <text x="${W - 24}" y="32" font-size="11" text-anchor="end" fill="${c.muted}">synced ${s.today}</text>
+  <text x="${W - 24}" y="32" font-size="11" text-anchor="end" fill="${c.muted}">synced ${s.today} · ${esc(scope)}</text>
   <line x1="24" y1="46" x2="${W - 24}" y2="46" stroke="#1f2a24"/>
 
   <line x1="287" y1="66" x2="287" y2="204" stroke="#1f2a24"/>

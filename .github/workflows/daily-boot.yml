@@ -32,6 +32,9 @@ jobs:
         run: npm run build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional: your own PAT (classic, scopes `repo` + `read:user`) so the
+          # streak card counts private contributions. Unset = public view.
+          STREAK_TOKEN: ${{ secrets.STREAK_TOKEN }}
 
       - name: Commit changes
         run: |
