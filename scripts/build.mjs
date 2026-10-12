@@ -7,11 +7,12 @@
 //   assets/stats.svg     ← last-year totals + languages by bytes (GraphQL)
 //   assets/activity.svg  ← daily contributions, last 90 days
 //   assets/achievements.svg ← tiered badges computed from the above
+//   assets/links/*.svg   ← link buttons, plus the HERO_LINKS / LINKS blocks in README
 //   README.md            ← today's `fortune | cowsay` between the FORTUNE markers
 //
 // Runs daily in .github/workflows/daily-boot.yml; run locally with `npm run build`.
 
-import { access, readFile, writeFile } from 'node:fs/promises';
+import { access, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { renderTerminal } from './lib/terminal.mjs';
 import { renderTyping } from './lib/typing.mjs';
@@ -22,6 +23,7 @@ import { fetchStats, renderStats } from './lib/stats.mjs';
 import { renderActivity } from './lib/activity.mjs';
 import { computeAchievements, renderAchievements } from './lib/achievements.mjs';
 import { pending } from './lib/panel.mjs';
+import { LINKS, renderLink, linkRow } from './lib/links.mjs';
 
 const USER = process.env.GH_USER ?? 'richabh-exe';
 const root = (p) => fileURLToPath(new URL(`../${p}`, import.meta.url));
@@ -91,6 +93,10 @@ const data = {
 await writeFile(root('assets/terminal.svg'), renderTerminal(data));
 await writeFile(root('assets/typing.svg'), renderTyping(TAGLINES));
 await writeFile(root('assets/footer.svg'), renderFooter());
+await mkdir(root('assets/links'), { recursive: true });
+await Promise.all(LINKS.map((l) => writeFile(root(`assets/links/${l.id}.svg`), renderLink(l))));
+await replaceBlock('README.md', 'HERO_LINKS', linkRow(LINKS.filter((l) => l.hero)));
+await replaceBlock('README.md', 'LINKS', linkRow(LINKS));
 await replaceBlock(
   'README.md',
   'FORTUNE',
