@@ -2,9 +2,12 @@ name: snake
 
 # Feeds the contribution graph to a snake and publishes the SVGs to the
 # `output` branch, which the README reads from raw.githubusercontent.com.
+# Same 3-hour cadence as daily-boot so the snake and the stat cards always
+# draw from the same contribution calendar (private contributions included
+# once "Private contributions" is on in the profile's Contribution settings).
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "10 */3 * * *"
   workflow_dispatch:
   push:
     branches: [main]
