@@ -114,17 +114,20 @@ export default richabh; // 🚀
 <!-- FORTUNE:START -->
 ```text
  _______________________________________
-/ Weeks of coding can save you hours of \
-| planning.                             |
-\   — unknown, but painfully true       /
+/ A prompt is just a function signature \
+| written in English.                   |
+\   — a tinkerer's notebook             /
  ---------------------------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
+        \
+         \   .--.
+            |o_o |
+            |:_/ |
+           //   \ \
+          (|     | )
+         /'\_   _/`\
+         \___)=(___/
 ```
-<sub>rotates daily · last run 2026-10-16</sub>
+<sub>rotates daily · last run 2026-10-17</sub>
 <!-- FORTUNE:END -->
 
 <br/>
