@@ -113,21 +113,18 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- _______________________________________
-/ A prompt is just a function signature \
-| written in English.                   |
-\   — a tinkerer's notebook             /
- ---------------------------------------
+ _____________________________________
+/ Pixels are cheap. Attention is not. \
+\   — a tinkerer's notebook           /
+ -------------------------------------
         \
-         \   .--.
-            |o_o |
-            |:_/ |
-           //   \ \
-          (|     | )
-         /'\_   _/`\
-         \___)=(___/
+         \    .-[ ]-.
+             | o   o |
+             |  ___  |
+             '-------'
+              /|   |\
 ```
-<sub>rotates daily · last run 2026-10-17</sub>
+<sub>rotates daily · last run 2026-10-18</sub>
 <!-- FORTUNE:END -->
 
 <br/>
