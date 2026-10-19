@@ -113,18 +113,18 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- _____________________________________
-/ Pixels are cheap. Attention is not. \
-\   — a tinkerer's notebook           /
- -------------------------------------
-        \
-         \    .-[ ]-.
-             | o   o |
-             |  ___  |
-             '-------'
-              /|   |\
+ __________________________________________
+/ Ship it, then make it pretty. Or make it \
+| pretty, then ship it. Just ship it.      |
+\   — a tinkerer's notebook                /
+ ------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
 ```
-<sub>rotates daily · last run 2026-10-18</sub>
+<sub>rotates daily · last run 2026-10-19</sub>
 <!-- FORTUNE:END -->
 
 <br/>
