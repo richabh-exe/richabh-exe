@@ -113,21 +113,18 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- ______________________________________________
-/ The agent did exactly what I asked. That was \
-| the bug.                                     |
-\   — a tinkerer's notebook                    /
- ----------------------------------------------
+ _________________________________
+/ // TODO: write a better fortune \
+\   — git blame says: me          /
+ ---------------------------------
         \
-         \   .--.
-            |o_o |
-            |:_/ |
-           //   \ \
-          (|     | )
-         /'\_   _/`\
-         \___)=(___/
+         \    .-[ ]-.
+             | o   o |
+             |  ___  |
+             '-------'
+              /|   |\
 ```
-<sub>rotates daily · last run 2026-10-20</sub>
+<sub>rotates daily · last run 2026-10-21</sub>
 <!-- FORTUNE:END -->
 
 <br/>
