@@ -151,7 +151,7 @@
     </g>
     <g class="in" style="animation-delay:5.96s">
       <text x="262" y="226" fill="#ffb547" font-weight="700">Uptime:</text>
-      <text x="346" y="226" fill="#d4ffe6">8m 9d on GitHub</text>
+      <text x="346" y="226" fill="#d4ffe6">8m 10d on GitHub</text>
     </g>
     <g class="in" style="animation-delay:6.03s">
       <text x="262" y="246" fill="#ffb547" font-weight="700">Packages:</text>
@@ -183,7 +183,7 @@
     </g>
     <g class="in" style="animation-delay:6.52s">
       <text x="262" y="386" fill="#ffb547" font-weight="700">Booted:</text>
-      <text x="346" y="386" fill="#d4ffe6">2026-10-21 (daily cron)</text>
+      <text x="346" y="386" fill="#d4ffe6">2026-10-22 (daily cron)</text>
     </g>
   <g class="in" style="animation-delay:6.69s"><rect x="262" y="414" width="24" height="12" rx="2" fill="#0d1117" stroke="#16402a"/><rect x="290" y="414" width="24" height="12" rx="2" fill="#ff5f56" stroke="#16402a"/><rect x="318" y="414" width="24" height="12" rx="2" fill="#27c93f" stroke="#16402a"/><rect x="346" y="414" width="24" height="12" rx="2" fill="#ffbd2e" stroke="#16402a"/><rect x="374" y="414" width="24" height="12" rx="2" fill="#5ee7ff" stroke="#16402a"/><rect x="402" y="414" width="24" height="12" rx="2" fill="#c678dd" stroke="#16402a"/><rect x="430" y="414" width="24" height="12" rx="2" fill="#4dff9a" stroke="#16402a"/><rect x="458" y="414" width="24" height="12" rx="2" fill="#d4ffe6" stroke="#16402a"/></g>
 
