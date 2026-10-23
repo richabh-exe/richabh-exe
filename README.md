@@ -113,19 +113,20 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- ____________________________________________
-/ There are only two hard things in Computer \
-| Science: cache invalidation and naming     |
-| things.                                    |
-\   — Phil Karlton                           /
- --------------------------------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
+ __________________________________
+/ Talk is cheap. Show me the code. \
+\   — Linus Torvalds               /
+ ----------------------------------
+        \
+         \   .--.
+            |o_o |
+            |:_/ |
+           //   \ \
+          (|     | )
+         /'\_   _/`\
+         \___)=(___/
 ```
-<sub>rotates daily · last run 2026-10-22</sub>
+<sub>rotates daily · last run 2026-10-23</sub>
 <!-- FORTUNE:END -->
 
 <br/>
