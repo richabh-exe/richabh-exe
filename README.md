@@ -113,17 +113,21 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- _____________________________________________
-/ Simplicity is prerequisite for reliability. \
-\   — Edsger W. Dijkstra                      /
- ---------------------------------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
+ ___________________________________________
+/ Premature optimization is the root of all \
+| evil.                                     |
+\   — Donald Knuth                          /
+ -------------------------------------------
+        \
+         \   .--.
+            |o_o |
+            |:_/ |
+           //   \ \
+          (|     | )
+         /'\_   _/`\
+         \___)=(___/
 ```
-<sub>rotates daily · last run 2026-10-25</sub>
+<sub>rotates daily · last run 2026-10-26</sub>
 <!-- FORTUNE:END -->
 
 <br/>
