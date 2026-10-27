@@ -113,21 +113,19 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- ___________________________________________
-/ Premature optimization is the root of all \
-| evil.                                     |
-\   — Donald Knuth                          /
- -------------------------------------------
+ _________________________________________
+/ Any sufficiently advanced technology is \
+| indistinguishable from magic.           |
+\   — Arthur C. Clarke                    /
+ -----------------------------------------
         \
-         \   .--.
-            |o_o |
-            |:_/ |
-           //   \ \
-          (|     | )
-         /'\_   _/`\
-         \___)=(___/
+         \    .-[ ]-.
+             | o   o |
+             |  ___  |
+             '-------'
+              /|   |\
 ```
-<sub>rotates daily · last run 2026-10-26</sub>
+<sub>rotates daily · last run 2026-10-27</sub>
 <!-- FORTUNE:END -->
 
 <br/>
