@@ -113,19 +113,17 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- _________________________________________
-/ Any sufficiently advanced technology is \
-| indistinguishable from magic.           |
-\   — Arthur C. Clarke                    /
- -----------------------------------------
-        \
-         \    .-[ ]-.
-             | o   o |
-             |  ___  |
-             '-------'
-              /|   |\
+ ____________________________________________
+/ Make it work, make it right, make it fast. \
+\   — Kent Beck                              /
+ --------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
 ```
-<sub>rotates daily · last run 2026-10-27</sub>
+<sub>rotates daily · last run 2026-10-28</sub>
 <!-- FORTUNE:END -->
 
 <br/>
