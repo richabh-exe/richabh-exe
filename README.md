@@ -113,17 +113,21 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- ____________________________________________
-/ Make it work, make it right, make it fast. \
-\   — Kent Beck                              /
- --------------------------------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
+ __________________________________________
+/ The best way to predict the future is to \
+| invent it.                               |
+\   — Alan Kay                             /
+ ------------------------------------------
+        \
+         \   .--.
+            |o_o |
+            |:_/ |
+           //   \ \
+          (|     | )
+         /'\_   _/`\
+         \___)=(___/
 ```
-<sub>rotates daily · last run 2026-10-28</sub>
+<sub>rotates daily · last run 2026-10-29</sub>
 <!-- FORTUNE:END -->
 
 <br/>
