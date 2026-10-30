@@ -113,21 +113,19 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- __________________________________________
-/ The best way to predict the future is to \
-| invent it.                               |
-\   — Alan Kay                             /
- ------------------------------------------
+ ___________________________________________
+/ Debugging is twice as hard as writing the \
+| code in the first place.                  |
+\   — Brian Kernighan                       /
+ -------------------------------------------
         \
-         \   .--.
-            |o_o |
-            |:_/ |
-           //   \ \
-          (|     | )
-         /'\_   _/`\
-         \___)=(___/
+         \    .-[ ]-.
+             | o   o |
+             |  ___  |
+             '-------'
+              /|   |\
 ```
-<sub>rotates daily · last run 2026-10-29</sub>
+<sub>rotates daily · last run 2026-10-30</sub>
 <!-- FORTUNE:END -->
 
 <br/>
