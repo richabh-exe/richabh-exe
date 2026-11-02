@@ -113,21 +113,19 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- ___________________________________________
-/ Design is not just what it looks like and \
-| feels like. Design is how it works.       |
-\   — Steve Jobs                            /
- -------------------------------------------
+ ______________________________________________
+/ The function of good software is to make the \
+| complex appear to be simple.                 |
+\   — Grady Booch                              /
+ ----------------------------------------------
         \
-         \   .--.
-            |o_o |
-            |:_/ |
-           //   \ \
-          (|     | )
-         /'\_   _/`\
-         \___)=(___/
+         \    .-[ ]-.
+             | o   o |
+             |  ___  |
+             '-------'
+              /|   |\
 ```
-<sub>rotates daily · last run 2026-11-01</sub>
+<sub>rotates daily · last run 2026-11-02</sub>
 <!-- FORTUNE:END -->
 
 <br/>
