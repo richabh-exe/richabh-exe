@@ -113,17 +113,20 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- ________________________________
-/ Deleted code is debugged code. \
-\   — Jeff Sickel                /
- --------------------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
+ _________________________________________
+/ To iterate is human, to recurse divine. \
+\   — L. Peter Deutsch                    /
+ -----------------------------------------
+        \
+         \   .--.
+            |o_o |
+            |:_/ |
+           //   \ \
+          (|     | )
+         /'\_   _/`\
+         \___)=(___/
 ```
-<sub>rotates daily · last run 2026-11-03</sub>
+<sub>rotates daily · last run 2026-11-04</sub>
 <!-- FORTUNE:END -->
 
 <br/>
