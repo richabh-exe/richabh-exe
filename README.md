@@ -113,20 +113,19 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- _________________________________________
-/ To iterate is human, to recurse divine. \
-\   — L. Peter Deutsch                    /
- -----------------------------------------
+ ______________________________________________
+/ It always takes longer than you expect, even \
+| when you take into account Hofstadter's Law. |
+\   — Douglas Hofstadter                       /
+ ----------------------------------------------
         \
-         \   .--.
-            |o_o |
-            |:_/ |
-           //   \ \
-          (|     | )
-         /'\_   _/`\
-         \___)=(___/
+         \    .-[ ]-.
+             | o   o |
+             |  ___  |
+             '-------'
+              /|   |\
 ```
-<sub>rotates daily · last run 2026-11-04</sub>
+<sub>rotates daily · last run 2026-11-05</sub>
 <!-- FORTUNE:END -->
 
 <br/>
