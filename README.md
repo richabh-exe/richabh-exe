@@ -113,19 +113,19 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- ______________________________________________
-/ It always takes longer than you expect, even \
-| when you take into account Hofstadter's Law. |
-\   — Douglas Hofstadter                       /
- ----------------------------------------------
-        \
-         \    .-[ ]-.
-             | o   o |
-             |  ___  |
-             '-------'
-              /|   |\
+ ___________________________________________
+/ Walking on water and developing software  \
+| from a specification are easy if both are |
+| frozen.                                   |
+\   — Edward V. Berard                      /
+ -------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
 ```
-<sub>rotates daily · last run 2026-11-05</sub>
+<sub>rotates daily · last run 2026-11-06</sub>
 <!-- FORTUNE:END -->
 
 <br/>
