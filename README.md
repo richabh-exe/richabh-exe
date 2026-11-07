@@ -113,19 +113,21 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- ___________________________________________
-/ Walking on water and developing software  \
-| from a specification are easy if both are |
-| frozen.                                   |
-\   — Edward V. Berard                      /
- -------------------------------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
+ ______________________________________________
+/ A user interface is like a joke. If you have \
+| to explain it, it's not that good.           |
+\   — Martin LeBlanc                           /
+ ----------------------------------------------
+        \
+         \   .--.
+            |o_o |
+            |:_/ |
+           //   \ \
+          (|     | )
+         /'\_   _/`\
+         \___)=(___/
 ```
-<sub>rotates daily · last run 2026-11-06</sub>
+<sub>rotates daily · last run 2026-11-07</sub>
 <!-- FORTUNE:END -->
 
 <br/>
