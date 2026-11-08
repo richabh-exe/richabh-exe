@@ -113,21 +113,18 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- ______________________________________________
-/ A user interface is like a joke. If you have \
-| to explain it, it's not that good.           |
-\   — Martin LeBlanc                           /
- ----------------------------------------------
+ _____________________________________________
+/ Have you tried turning it off and on again? \
+\   — The IT Crowd                            /
+ ---------------------------------------------
         \
-         \   .--.
-            |o_o |
-            |:_/ |
-           //   \ \
-          (|     | )
-         /'\_   _/`\
-         \___)=(___/
+         \    .-[ ]-.
+             | o   o |
+             |  ___  |
+             '-------'
+              /|   |\
 ```
-<sub>rotates daily · last run 2026-11-07</sub>
+<sub>rotates daily · last run 2026-11-08</sub>
 <!-- FORTUNE:END -->
 
 <br/>
