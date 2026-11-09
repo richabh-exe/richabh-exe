@@ -113,18 +113,17 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- _____________________________________________
-/ Have you tried turning it off and on again? \
-\   — The IT Crowd                            /
- ---------------------------------------------
-        \
-         \    .-[ ]-.
-             | o   o |
-             |  ___  |
-             '-------'
-              /|   |\
+ _________________________________
+/ There's no place like 127.0.0.1 \
+\   — every sysadmin, ever        /
+ ---------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
 ```
-<sub>rotates daily · last run 2026-11-08</sub>
+<sub>rotates daily · last run 2026-11-09</sub>
 <!-- FORTUNE:END -->
 
 <br/>
