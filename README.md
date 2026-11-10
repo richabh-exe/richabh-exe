@@ -113,17 +113,20 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- _________________________________
-/ There's no place like 127.0.0.1 \
-\   — every sysadmin, ever        /
- ---------------------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
+ ___________________________
+/ It works on my machine.   \
+\   — every developer, ever /
+ ---------------------------
+        \
+         \   .--.
+            |o_o |
+            |:_/ |
+           //   \ \
+          (|     | )
+         /'\_   _/`\
+         \___)=(___/
 ```
-<sub>rotates daily · last run 2026-11-09</sub>
+<sub>rotates daily · last run 2026-11-10</sub>
 <!-- FORTUNE:END -->
 
 <br/>
