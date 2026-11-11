@@ -113,20 +113,19 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- ___________________________
-/ It works on my machine.   \
-\   — every developer, ever /
- ---------------------------
+ _______________________________________
+/ Weeks of coding can save you hours of \
+| planning.                             |
+\   — unknown, but painfully true       /
+ ---------------------------------------
         \
-         \   .--.
-            |o_o |
-            |:_/ |
-           //   \ \
-          (|     | )
-         /'\_   _/`\
-         \___)=(___/
+         \    .-[ ]-.
+             | o   o |
+             |  ___  |
+             '-------'
+              /|   |\
 ```
-<sub>rotates daily · last run 2026-11-10</sub>
+<sub>rotates daily · last run 2026-11-11</sub>
 <!-- FORTUNE:END -->
 
 <br/>
