@@ -113,19 +113,18 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- __________________________________________
-/ Ship it, then make it pretty. Or make it \
-| pretty, then ship it. Just ship it.      |
-\   — a tinkerer's notebook                /
- ------------------------------------------
-        \
-         \    .-[ ]-.
-             | o   o |
-             |  ___  |
-             '-------'
-              /|   |\
+ ______________________________________________
+/ The agent did exactly what I asked. That was \
+| the bug.                                     |
+\   — a tinkerer's notebook                    /
+ ----------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
 ```
-<sub>rotates daily · last run 2026-11-14</sub>
+<sub>rotates daily · last run 2026-11-15</sub>
 <!-- FORTUNE:END -->
 
 <br/>
