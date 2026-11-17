@@ -113,20 +113,20 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- _________________________________
-/ // TODO: write a better fortune \
-\   — git blame says: me          /
- ---------------------------------
+ ____________________________________________
+/ There are only two hard things in Computer \
+| Science: cache invalidation and naming     |
+| things.                                    |
+\   — Phil Karlton                           /
+ --------------------------------------------
         \
-         \   .--.
-            |o_o |
-            |:_/ |
-           //   \ \
-          (|     | )
-         /'\_   _/`\
-         \___)=(___/
+         \    .-[ ]-.
+             | o   o |
+             |  ___  |
+             '-------'
+              /|   |\
 ```
-<sub>rotates daily · last run 2026-11-16</sub>
+<sub>rotates daily · last run 2026-11-17</sub>
 <!-- FORTUNE:END -->
 
 <br/>
