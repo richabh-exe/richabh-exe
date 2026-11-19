@@ -113,17 +113,22 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- __________________________________
-/ Talk is cheap. Show me the code. \
-\   — Linus Torvalds               /
- ----------------------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
+ ______________________________________________
+/ Programs must be written for people to read, \
+| and only incidentally for machines to        |
+| execute.                                     |
+\   — Harold Abelson                           /
+ ----------------------------------------------
+        \
+         \   .--.
+            |o_o |
+            |:_/ |
+           //   \ \
+          (|     | )
+         /'\_   _/`\
+         \___)=(___/
 ```
-<sub>rotates daily · last run 2026-11-18</sub>
+<sub>rotates daily · last run 2026-11-19</sub>
 <!-- FORTUNE:END -->
 
 <br/>
