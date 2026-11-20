@@ -113,22 +113,18 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- ______________________________________________
-/ Programs must be written for people to read, \
-| and only incidentally for machines to        |
-| execute.                                     |
-\   — Harold Abelson                           /
- ----------------------------------------------
+ _____________________________________________
+/ Simplicity is prerequisite for reliability. \
+\   — Edsger W. Dijkstra                      /
+ ---------------------------------------------
         \
-         \   .--.
-            |o_o |
-            |:_/ |
-           //   \ \
-          (|     | )
-         /'\_   _/`\
-         \___)=(___/
+         \    .-[ ]-.
+             | o   o |
+             |  ___  |
+             '-------'
+              /|   |\
 ```
-<sub>rotates daily · last run 2026-11-19</sub>
+<sub>rotates daily · last run 2026-11-20</sub>
 <!-- FORTUNE:END -->
 
 <br/>
