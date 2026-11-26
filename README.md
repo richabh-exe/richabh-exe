@@ -113,21 +113,18 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- ___________________________________________
-/ Debugging is twice as hard as writing the \
-| code in the first place.                  |
-\   — Brian Kernighan                       /
- -------------------------------------------
+ ______________________________________________
+/ Good design is as little design as possible. \
+\   — Dieter Rams                              /
+ ----------------------------------------------
         \
-         \   .--.
-            |o_o |
-            |:_/ |
-           //   \ \
-          (|     | )
-         /'\_   _/`\
-         \___)=(___/
+         \    .-[ ]-.
+             | o   o |
+             |  ___  |
+             '-------'
+              /|   |\
 ```
-<sub>rotates daily · last run 2026-11-25</sub>
+<sub>rotates daily · last run 2026-11-26</sub>
 <!-- FORTUNE:END -->
 
 <br/>
