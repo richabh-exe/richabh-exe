@@ -113,18 +113,18 @@ export default richabh; // 🚀
 
 <!-- FORTUNE:START -->
 ```text
- ______________________________________________
-/ Good design is as little design as possible. \
-\   — Dieter Rams                              /
- ----------------------------------------------
-        \
-         \    .-[ ]-.
-             | o   o |
-             |  ___  |
-             '-------'
-              /|   |\
+ ___________________________________________
+/ Design is not just what it looks like and \
+| feels like. Design is how it works.       |
+\   — Steve Jobs                            /
+ -------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
 ```
-<sub>rotates daily · last run 2026-11-26</sub>
+<sub>rotates daily · last run 2026-11-27</sub>
 <!-- FORTUNE:END -->
 
 <br/>
